@@ -1,0 +1,14 @@
+{
+    "scs":  "git",
+    "description":  "DyND is a dynamic array library for structured and semi-structured data, written with C++ as a first-class target and extended to Python with a lightweight binding.",
+    "updatecmd":  "git pull",
+    "project":  "libdynd",
+    "devhome":  "https://github.com/libdynd/libdynd",
+    "lang":  [
+                 "c++",
+                 "python"
+             ],
+    "homepage":  "http://libdynd.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/libdynd/libdynd.git"
+}

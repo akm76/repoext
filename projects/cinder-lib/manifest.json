@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Cinder is a free and open source library for professional-quality creative coding in C++.",
+    "updatecmd":  "",
+    "project":  "cinder-lib",
+    "devhome":  "https://github.com/cinder/Cinder",
+    "lang":  "c++",
+    "homepage":  "https://www.libcinder.org",
+    "buildcmd":  "",
+    "cloneurl":  "git clone --recursive https://github.com/cinder/Cinder.git"
+}

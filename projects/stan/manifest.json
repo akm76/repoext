@@ -1,0 +1,10 @@
+{
+    "updatecmd":  "git pull",
+    "devhome":  "https://github.com/stan-dev",
+    "homepage":  "http://mc-stan.org",
+    "project":  "stan",
+    "cloneurl":  "git clone https://github.com/stan-dev/stan.git",
+    "description":  "",
+    "buildcmd":  "",
+    "scs":  "git"
+}

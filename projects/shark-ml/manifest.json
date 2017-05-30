@@ -1,13 +1,14 @@
 {
+    "scs":  "git",
+    "description":  "SHARK is a fast, modular, feature-rich open-source C++ machine learning library. It provides methods for linear and nonlinear optimization, kernel-based learning algorithms, neural networks, and various other machine learning techniques",
     "updatecmd":  "git pull",
+    "depends":  [
+                    "boost",
+                    "cmake"
+                ],
+    "project":  "shark-ml",
+    "cloneurl":  "git clone https://github.com/Shark-ML/Shark/",
     "lang":  "c++",
     "homepage":  "http://image.diku.dk/shark/sphinx_pages/build/html/index.html",
-    "cloneurl":  "git clone https://github.com/Shark-ML/Shark/",
-    "description":  "SHARK is a fast, modular, feature-rich open-source C++ machine learning library. It provides methods for linear and nonlinear optimization, kernel-based learning algorithms, neural networks, and various other machine learning techniques",
-    "buildcmd":  "",
-    "scs":  "git",
-    "depends":  [
-                    "Boost",
-                    "cmake"
-                ]
+    "buildcmd":  ""
 }

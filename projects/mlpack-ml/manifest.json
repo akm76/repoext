@@ -1,0 +1,10 @@
+{
+    "updatecmd":  "git pull",
+    "devhome":  "https://github.com/mlpack/mlpack",
+    "homepage":  "http://mlpack.org/",
+    "project":  "mlpack-ml",
+    "cloneurl":  "git clone https://github.com/mlpack/mlpack.git",
+    "description":  "mlpack is an intuitive, fast, scalable C++ machine learning library, meant to be a machine learning analog to LAPACK. It aims to implement a wide array of machine learning methods and functions as a \"swiss army knife\" for machine learning researchers.",
+    "buildcmd":  "",
+    "scs":  "git"
+}

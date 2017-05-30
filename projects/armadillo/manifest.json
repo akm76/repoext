@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Armadillo is a high quality C++ linear algebra library, aiming towards a good balance between speed and ease of use.",
+    "updatecmd":  "git pull",
+    "project":  "armadillo",
+    "devhome":  "https://github.com/conradsnicta/armadillo-code",
+    "lang":  "c++",
+    "homepage":  "http://arma.sourceforge.net/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/conradsnicta/armadillo-code.git"
+}

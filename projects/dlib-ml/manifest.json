@@ -1,0 +1,14 @@
+{
+    "scs":  "git",
+    "description":  "Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems.",
+    "updatecmd":  "",
+    "project":  "dlib-ml",
+    "devhome":  "https://github.com/davisking/dlib",
+    "lang":  [
+                 "c++",
+                 "python"
+             ],
+    "homepage":  "http://dlib.net",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/davisking/dlib.git"
+}

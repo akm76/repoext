@@ -1,0 +1,19 @@
+{
+    "updatecmd":  "git pull",
+    "lang":  [
+                 "c++",
+                 "c-sharp",
+                 "c",
+                 "Go",
+                 "Java",
+                 "JavaScript",
+                 "PHP",
+                 "Python"
+             ],
+    "homepage":  "http://google.github.io/flatbuffers/",
+    "project":  "flatbuffers",
+    "cloneurl":  "git clone https://github.com/google/flatbuffers.git",
+    "description":  "FlatBuffers is an efficient cross platform serialization library for C++, C#, C, Go, Java, JavaScript, PHP, and Python.",
+    "buildcmd":  "",
+    "scs":  "git"
+}

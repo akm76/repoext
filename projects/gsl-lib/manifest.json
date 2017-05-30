@@ -1,0 +1,10 @@
+{
+    "updatecmd":  "git pull",
+    "lang":  "c",
+    "homepage":  "https://www.gnu.org/software/gsl/",
+    "project":  "gsl-lib",
+    "cloneurl":  "git clone git://git.savannah.gnu.org/gsl.git",
+    "description":  "The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers.",
+    "buildcmd":  "",
+    "scs":  "git"
+}

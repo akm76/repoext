@@ -1,0 +1,14 @@
+{
+    "scs":  "git",
+    "description":  "PETSc, pronounced PET-see (the S is silent), is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations. It supports MPI, and GPUs through CUDA or OpenCL, as well as hybrid MPI-GPU parallelism. ",
+    "updatecmd":  "git pull",
+    "project":  "petsc",
+    "cloneurl":  "git clone -b maint https://bitbucket.org/petsc/petsc",
+    "lang":  [
+                 "c++",
+                 "fortran"
+             ],
+    "homepage":  "http://www.mcs.anl.gov/petsc/",
+    "buildcmd":  "",
+    "note":  "beside solving partial differential equations, codes illustrates how to do parallel scientific computing"
+}

@@ -1,0 +1,11 @@
+{
+    "scs":  "svn",
+    "description":  "CLAM (C++ Library for Audio and Music) is a full-fledged software framework for research and application development in the Audio and Music Domain. It offers a conceptual model as well as tools for the analysis, synthesis and processing of audio signals.",
+    "updatecmd":  "",
+    "project":  "clam-project",
+    "cloneurl":  "",
+    "lang":  "c++",
+    "homepage":  "http://clam-project.org/index.html",
+    "clonescript":  "svn co http://clam-project.org/clam/trunk clam",
+    "buildcmd":  ""
+}

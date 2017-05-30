@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Folly (acronymed loosely after Facebook Open Source Library) is a library of C++11 components designed with practicality and efficiency in mind. Folly contains a variety of core library components used extensively at Facebook. In particular, it\u0027s often a dependency of Facebook\u0027s other open source C++ efforts and place where those projects can share code.",
+    "updatecmd":  "git pull",
+    "project":  "folly-lib",
+    "cloneurl":  "git clone https://github.com/facebook/folly.git",
+    "lang":  "c++",
+    "homepage":  "https://github.com/facebook/folly",
+    "buildcmd":  "",
+    "note":  "Facebook\u0027s library of general purpose c++ code; extensions to std and boost"
+}

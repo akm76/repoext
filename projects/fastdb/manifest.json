@@ -1,0 +1,11 @@
+{
+    "scs":  "svn",
+    "description":  "Main Memory Relational Database Management System.",
+    "updatecmd":  "",
+    "project":  "fastdb",
+    "cloneurl":  "",
+    "lang":  "c",
+    "homepage":  "http://www.garret.ru/fastdb.html",
+    "clonescript":  "svn checkout svn://svn.code.sf.net/p/fastdb/code/ fastdb-code",
+    "buildcmd":  ""
+}

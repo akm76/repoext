@@ -1,0 +1,12 @@
+{
+    "scs":  "svn",
+    "description":  "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. Despite its name, LLVM has little to do with traditional virtual machines, though it does provide helpful libraries that can be used to build them.",
+    "updatecmd":  "",
+    "depends":  "cmake",
+    "project":  "clang-llvm",
+    "cloneurl":  "",
+    "lang":  "c++",
+    "homepage":  "http://clang.llvm.org/get_started.html",
+    "clonescript":  "svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm; cd llvm/tools; svn co http://llvm.org/svn/llvm-project/cfe/trunk clang",
+    "buildcmd":  "mkdir build; cd build; cmake -G \"Visual Studio 14 2015 Win64\" ../llvm; cmake --build ../ --config Release"
+}

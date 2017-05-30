@@ -1,0 +1,13 @@
+{
+    "updatecmd":  "git pull",
+    "lang":  [
+                 "c-sharp",
+                 "f-sharp"
+             ],
+    "homepage":  "",
+    "project":  "deedle-lib",
+    "cloneurl":  "git clone https://github.com/BlueMountainCapital/Deedle.git",
+    "description":  "",
+    "buildcmd":  "",
+    "scs":  "git"
+}

@@ -5,7 +5,10 @@
                       "git submodule update --init"
                   ],
     "lang":  "c++",
-    "buildscript":  "files/build.ps1",
+    "buildscript":  [
+                        "files/build.ps1",
+                        "files/build.sh"
+                    ],
     "homepage":  "http://www.boost.org",
     "project":  "modular-boost",
     "cloneurl":  "git clone --recursive git@github.com:boostorg/boost.git",

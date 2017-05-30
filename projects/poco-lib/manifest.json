@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Modern, powerful open source C++ class libraries for building network- and internet-based applications that run on desktop, server, mobile and embedded systems.",
+    "updatecmd":  "git pull",
+    "project":  "poco-lib",
+    "devhome":  "https://github.com/pocoproject/poco",
+    "lang":  "c++",
+    "homepage":  "https://pocoproject.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/pocoproject/poco.git"
+}

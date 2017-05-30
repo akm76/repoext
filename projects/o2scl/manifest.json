@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "O2scl is a C++ library for object-oriented numerical programming. It includes interpolation, differentiation, integration, roots of polynomials, equation solving, minimization, constrained minimization, Monte Carlo integration, simulated annealing, least-squares fitting, solution of ordinary differential equations, two-dimensional interpolation, Chebyshev approximation, unit conversions, and file I/O with HDF5.",
+    "updatecmd":  "git pull",
+    "project":  "o2scl",
+    "devhome":  "https://github.com/awsteiner/o2scl",
+    "lang":  "c++",
+    "homepage":  "http://web.utk.edu/~asteine1/o2scl/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/awsteiner/o2scl.git"
+}

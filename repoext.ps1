@@ -100,7 +100,7 @@ param(
     [parameter(Mandatory=$true)][string] $repoName,
     [parameter(Mandatory=$true)] $config
     )
-    Write-Host $repoName
+    Write-Host $repoName+" : Clone-Repo"
     $manifestLoc=Join-Path $config.PROJDEFS $repoName 
     $manifestLoc=Join-Path $manifestLoc "manifest.json"
     if(Test-Path $manifestLoc) {
@@ -112,14 +112,21 @@ param(
             throw "Local Repo exists; remove first or use Update-Repo: "+$localRepo
         }
         Push-Location $config.SRC
-        if($cloneURL.Length -ne 0) {
+        if(($cloneURL -ne $null) -and ($cloneURL.Length -ne 0)) {
             $cmd=$cloneURL+" "+$repoName+" >"+$repoName+"-clone.log"
             Invoke-Expression $cmd
+        } elif($manifest.clonescript -ne $null) {
+            $clonescript = $manifest.clonescript
+            Invoke-Expression $clonescript
+        } else {
+            Write-Host $repoName + " both cloneURL and clonescript are empty; inspect manifest.json"
+            throw "Don't know how to clone the repo"
         }
         Pop-Location
     }
     else {
         Write-Host $repoName + " is missing manifest.json file"
+        throw "Missing manifest"
     }
 }
 
@@ -130,6 +137,51 @@ param(
     [parameter(Mandatory=$true)][string] $repoName,
     [parameter(Mandatory=$true)] $config
     )
-    Write-Host $repoName
+    Write-Host $repoName+" : Update-Repo"
+}
+
+function Build-Project {
+param(
+    [parameter(Mandatory=$true)][string] $repoName,
+    [parameter(Mandatory=$true)] $config
+    )
+    Write-Host $repoName+" : Build-Repo"
+    $manifestLoc=Join-Path $config.PROJDEFS $repoName 
+    $manifestLoc=Join-Path $manifestLoc "manifest.json"
+    if(Test-Path $manifestLoc) {
+        $manifest = Get-Content $manifestLoc | ConvertFrom-Json
+
+        $localRepo=Join-Path $config.SRC $repoName
+        if( -Not (Test-Path $localRepo)) {
+            throw "Local Repo doesn't exists; forgot to clone first? "+$localRepo
+        }
+
+        if(($manifest.buildcmd -ne $null) -and ($manifest.buildcmd.Length -ne 0)) {
+            Push-Location $localRepo
+            $cmd=$manifest.buildcmd +" >"+$repoName+"-build.log" 
+            Invoke-Expression $cmd
+            Pop-Location
+        } elif($manifest.buildscript -ne $null) {
+            foreach($s in $manifest.buildscript) {
+                $x=Get-Item $s
+                if($x.Extension -eq ".ps1") {
+                    cp $s $localRepo
+                    Push-Location $localRepo
+                    Invoke-Expression (".\"+$x.Name)
+                    Pop-Location
+                    break
+                }
+                Write-Host $repoName+" No valid build-script found"
+                throw "missing buildscript"
+            }
+        } else {
+            Write-Host $repoName + " both buildcmd and buildscript are empty in manifest"
+            throw "don't know how to build "
+        }
+    }
+    else {
+        Write-Host $repoName + " is missing manifest.json file"
+        throw "Missing manifest"
+    }
 }
 

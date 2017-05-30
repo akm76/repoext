@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "PLplot is a cross-platform software package for creating scientific plots whose (UTF-8) plot symbols and text are limited in practice only by what Unicode-aware system fonts are installed on a user\u0027s computer.",
+    "updatecmd":  "",
+    "project":  "plplot",
+    "devhome":  "",
+    "lang":  "c",
+    "homepage":  "http://plplot.sourceforge.net/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://git.code.sf.net/p/plplot/plplot"
+}

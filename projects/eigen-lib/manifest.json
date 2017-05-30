@@ -1,0 +1,10 @@
+{
+    "updatecmd":  "",
+    "lang":  "c++",
+    "homepage":  "http://eigen.tuxfamily.org/index.php?title=Main_Page",
+    "project":  "eigen-lib",
+    "cloneurl":  "hg clone https://bitbucket.org/eigen/eigen/",
+    "description":  "Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.",
+    "buildcmd":  "",
+    "scs":  "hg"
+}
