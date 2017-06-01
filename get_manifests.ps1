@@ -371,3 +371,126 @@ $d=@{
 }
 If( -Not (Test-Path .\projects\sfml)) { mkdir .\projects\sfml }
 ConvertTo-Json $d |Set-Content .\projects\sfml\manifest.json
+
+$d=@{
+    project="gretl";
+    homepage="http://gretl.sourceforge.net/";
+    scs="git";
+    cloneurl="git clone https://git.code.sf.net/p/gretl/git gretl-git";
+    updatecmd="git pull";
+    buildcmd="";
+    lang="c";
+    description="Is a cross-platform software package for econometric analysis, written in the C programming language.";
+}
+
+$d=@{
+    project="vowpal_wabbit";
+    homepage="http://hunch.net/~vw/";
+    devhome="https://github.com/JohnLangford/vowpal_wabbit";
+    scs="git";
+    cloneurl="git clone https://github.com/JohnLangford/vowpal_wabbit.git";
+    updatecmd="git pull";
+    buildcmd="";
+    depends="boost","zlib";
+    description="Vowpal Wabbit is a machine learning system which pushes the frontier of machine learning with techniques such as online, hashing, allreduce, reductions, learning2search, active, and interactive learning.:"
+    lang="c++";
+}
+
+$d=@{
+    project="skipdb";
+    homepage="";
+    scs="git";
+    devhome="https://github.com/stevedekorte/skipdb";
+    cloneurl="git clone https://github.com/stevedekorte/skipdb.git";
+    updatecmd="git pull";
+    buildcmd="";
+    lang="c";
+    description="A Berkeley DB style database implemented with a skip list instead of a b-tree. It's small, portable and supports ACID transactions (with true durability)."
+}
+
+$d=@{
+    project="tiny-dnn";
+    homepage="";
+    devhome="https://github.com/tiny-dnn/tiny-dnn";
+    cloneurl="git clone https://github.com/tiny-dnn/tiny-dnn.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="header only, dependency-free deep learning framework in C++11";
+    lang="c++";
+}
+
+$d=@{
+    project="caffe-ml";
+    homepage="";
+    devhome="https://github.com/BVLC/caffe";
+    scs="git";
+    cloneurl="git clone https://github.com/BVLC/caffe.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by Berkeley AI Research (BAIR)/The Berkeley Vision and Learning Center (BVLC) and community contributors.";
+    lang="c++","python";
+}
+
+$d=@{
+    project="tensorflow-ml";
+    homepage="https://www.tensorflow.org/";
+    devhome="https://github.com/tensorflow";
+    scs="git";
+    cloneurl="git clone https://github.com/tensorflow/tensorflow.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="TensorFlow is an open source software library for numerical computation using data flow graphs."
+    lang="c++";
+}
+
+$d=@{
+    project="torch-ml";
+    homepage="http://torch.ch/";
+    devhome="https://github.com/torch/torch7";
+    scs="git";
+    cloneurl="git clone https://github.com/torch/torch7.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Torch is a scientific computing framework with wide support for machine learning algorithms that puts GPUs first. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.";
+    lang="c","lua";
+}
+
+$d=@{
+    project="mc-fastflow";
+    homepage="http://calvados.di.unipi.it/fastflow";
+    devhome="https://sourceforge.net/projects/mc-fastflow/";
+    scs="svn";
+    cloneurl="";
+    clonescript="svn checkout https://svn.code.sf.net/p/mc-fastflow/code/ mc-fastflow-code";
+    updatecmd="";
+    buildcmd="";
+    description="FastFlow is a multi-cores programming framework implemented as a C++ template 
+library that offers a set of mechanisms to support low-latency and 
+high-bandwidth data flows in a network of threads running on
+a cache-coherent multi-core architectures.";
+    lang="c++";
+}
+
+$d=@{
+    project="caffe2-ml";
+    homepage="https://caffe2.ai/";
+    devhome="https://github.com/caffe2/caffe2";
+    scs="git";
+    cloneurl="git clone https://github.com/caffe2/caffe2.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Caffe2 is a lightweight, modular, and scalable deep learning framework. Building on the original Caffe, Caffe2 is designed with expression, speed, and modularity in mind.";
+    lang="c++";
+}
+
+$d=@{
+    project="opensim";
+    homepage="http://opensimulator.org/wiki/Main_Page";
+    devhome="http://opensimulator.org/wiki/Developer_Documentation";
+    scs="git";
+    cloneurl="git clone git://opensimulator.org/git/opensim";
+    lang="c-sharp";
+    updatecmd="";
+    buildcmd="";
+    description="OpenSimulator is an open source multi-platform, multi-user 3D application server."
+}
