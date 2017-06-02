@@ -494,3 +494,175 @@ $d=@{
     buildcmd="";
     description="OpenSimulator is an open source multi-platform, multi-user 3D application server."
 }
+
+$d=@{
+    project="fix8";
+    homepage="http://www.fix8.org/";
+    devhome="https://github.com/fix8/fix8";
+    scs="git";
+    cloneurl="git clone https://github.com/fix8/fix8.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Modern open source C++ FIX framework featuring complete schema customisation, high performance and fast development. ";
+    lang="c++"
+}
+
+$d=@{
+    project="timeseriesdb";
+    homepage="";
+    devhome="https://github.com/nyurik/timeseriesdb";
+    scs="git";
+    cloneurl="git clone https://github.com/nyurik/timeseriesdb.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="TimeSeriesDb is a .NET library designed to store vast amount of data series in flat files.";
+    lang="c-sharp"
+}
+
+$d=@{
+    project="sonnet-tf";
+    homepage="";
+    devhome="https://github.com/deepmind/sonnet";
+    scs="git";
+    cloneurl="git clone https://github.com/deepmind/sonnet.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Sonnet is a library built on top of TensorFlow for building complex neural networks.";
+    lang="python","c++"
+}
+
+$d=@{
+    project="json4moderncpp-lib";
+    homepage="https://nlohmann.github.io/json/";
+    devhome="https://github.com/nlohmann/json";
+    scs="git";
+    cloneurl="git clone https://github.com/nlohmann/json.git";
+    updateurl="git pull";
+    buildcmd="";
+    lang="c++";
+    description="JSON for Modern C++, a C++11 header-only JSON class. (Also has CBOR and MessagePack serializers)";
+}
+
+$d=@{
+    project="rios-os";
+    homepage="http://www.riot-os.org/";
+    devhome="https://github.com/RIOT-OS/";
+    scs="git";
+    cloneurl="git clone https://github.com/RIOT-OS/RIOT.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="RIOT powers the Internet of Things like Linux powers the Internet. RIOT is a free, open source operating system developed by a grassroots community gathering companies, academia, and hobbyists, distributed all around the world. ";
+    lang="c"
+}
+
+$d=@{
+    project="libtrading";
+    homepage="http://libtrading.org/";
+    devhome="https://github.com/penberg/libtrading";
+    scs="git";
+    cloneurl="git clone https://github.com/penberg/libtrading.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Libtrading is an open source API for high-performance, low-latency trading applications. It implements network protocols used for communicating with exchanges, dark pools, and other trading venues. The API supports FIX, FIX/FAST, and many proprietary protocols such as ITCH and OUCH used by NASDAQ.";
+    lang="c"
+}
+
+$d=@{
+    project="disruptor-dotnet";
+    homepage="";
+    devhome="https://github.com/disruptor-net/Disruptor-net";
+    scs="git";
+    cloneurl="git clone https://github.com/disruptor-net/Disruptor-net.git";
+    updatecmd="";
+    buildcmd="";
+    description="This project aims to provide the full functionality of the Disruptor to CLR projects.";
+    lang="c-sharp"
+}
+
+$d=@{
+    project="hpx-cpp";
+    homepage="http://stellar-group.org/libraries/hpx/";
+    devhome="https://github.com/STEllAR-GROUP/hpx";
+    scs="git";
+    cloneurl="git clone https://github.com/STEllAR-GROUP/hpx.git";
+    updatecmd="git pull";
+    buildcmd="";
+    lang="c++";
+    description="HPX is a C++ Standard Library for Concurrency and Parallelism. It implements all of the corresponding facilities as defined by the C++ Standard. Additionally, in HPX we implement functionalities proposed as part of the ongoing C++ standardization process. We also extend the C++ Standard APIs to the distributed case."
+}
+
+########
+$d=@{
+    project="libevent-book";
+    cloneurl="git clone git://github.com/nmathewson/libevent-book.git";
+    description="???"
+}
+
+$d=@{
+    project="libevent";
+    cloneurl="";
+    description="";
+}
+
+$d=@{
+    project="libev";
+    cloneurl="";
+}
+
+$d=@{
+    project="libpqxx";
+    homepage="http://pqxx.org/development/libpqxx/";
+    devhome="https://github.com/jtv/libpqxx";
+    cloneurl="";
+}
+
+$d=@{
+    project="nanomsg";
+    devhome="https://github.com/nanomsg/nanomsg";
+    cloneurl="git clone https://github.com/nanomsg/nanomsg.git";
+}
+
+$d=@{
+    project="mshadow";
+    devhome="https://github.com/dmlc/mshadow";
+    cloneurl="git clone https://github.com/dmlc/mshadow.git";
+    description="MShadow is a lightweight CPU/GPU Matrix/Tensor Template Library in C++/CUDA."
+}
+
+$d=@{
+    project="mxnet";
+    homepage="http://mxnet.io/";
+    devhome="https://github.com/dmlc/mxnet";
+    cloneurl="git clone https://github.com/dmlc/mxnet.git";
+    description="MXNet is a deep learning framework designed for both efficiency and flexibility. "
+}
+
+$d=@{
+    project="redis";
+    homepage="https://redis.io/";
+    devhome="https://github.com/antirez/redis";
+    cloneurl="git clone https://github.com/antirez/redis.git";
+    description="Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.";
+}
+
+$d=@{
+    project="aquila";
+    homepage="http://aquila-dsp.org/";
+    devhome="https://github.com/zsiciarz/aquila";
+    cloneurl="git clone https://github.com/zsiciarz/aquila.git";
+    description="Aquila is an open source and cross-platform DSP (Digital Signal Processing) library written in C++."
+}
+
+$d=@{
+    project="tapkee-lib";
+    homepage="http://tapkee.lisitsyn.me/";
+}
+
+$d=@{
+    project="googletest";
+}
+
+$d=@{
+    project="fmtlib";
+    devhome="https://github.com/fmtlib/fmt";
+}
