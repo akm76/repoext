@@ -372,6 +372,9 @@ $d=@{
 If( -Not (Test-Path .\projects\sfml)) { mkdir .\projects\sfml }
 ConvertTo-Json $d |Set-Content .\projects\sfml\manifest.json
 
+
+########
+# projects below need to have their manifests loaded
 $d=@{
     project="gretl";
     homepage="http://gretl.sourceforge.net/";
@@ -591,7 +594,19 @@ $d=@{
     description="HPX is a C++ Standard Library for Concurrency and Parallelism. It implements all of the corresponding facilities as defined by the C++ Standard. Additionally, in HPX we implement functionalities proposed as part of the ongoing C++ standardization process. We also extend the C++ Standard APIs to the distributed case."
 }
 
+$d=@{
+    project="theano";
+    homepage="http://deeplearning.net/software/theano/index.html";
+    devhome="https://github.com/Theano/Theano";
+    cloneurl="git clone https://github.com/Theano/Theano.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.";
+    lang="python";
+}
+
 ########
+# Projects below need to have their manifests complete
 $d=@{
     project="libevent-book";
     cloneurl="git clone git://github.com/nmathewson/libevent-book.git";
@@ -666,3 +681,4 @@ $d=@{
     project="fmtlib";
     devhome="https://github.com/fmtlib/fmt";
 }
+
