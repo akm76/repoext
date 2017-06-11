@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "HPX is a C++ Standard Library for Concurrency and Parallelism. It implements all of the corresponding facilities as defined by the C++ Standard. Additionally, in HPX we implement functionalities proposed as part of the ongoing C++ standardization process. We also extend the C++ Standard APIs to the distributed case.",
+    "updatecmd":  "git pull",
+    "project":  "hpx-cpp",
+    "devhome":  "https://github.com/STEllAR-GROUP/hpx",
+    "lang":  "c++",
+    "homepage":  "http://stellar-group.org/libraries/hpx/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/STEllAR-GROUP/hpx.git"
+}

@@ -1,0 +1,14 @@
+{
+    "scs":  "git",
+    "description":  "Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by Berkeley AI Research (BAIR)/The Berkeley Vision and Learning Center (BVLC) and community contributors.",
+    "updatecmd":  "git pull",
+    "project":  "caffe-ml",
+    "devhome":  "https://github.com/BVLC/caffe",
+    "lang":  [
+                 "c++",
+                 "python"
+             ],
+    "homepage":  "",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/BVLC/caffe.git"
+}

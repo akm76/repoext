@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "fmt is an open-source formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.",
+    "updatecmd":  "git pull",
+    "project":  "fmtlib",
+    "devhome":  "https://github.com/fmtlib/fmt",
+    "lang":  "c++",
+    "homepage":  "http://fmtlib.net/latest/index.html",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/fmtlib/fmt.git"
+}

@@ -1,0 +1,10 @@
+{
+    "updatecmd":  "git pull",
+    "lang":  "c",
+    "homepage":  "http://gretl.sourceforge.net/",
+    "project":  "gretl",
+    "cloneurl":  "git clone https://git.code.sf.net/p/gretl/git gretl-git",
+    "description":  "Is a cross-platform software package for econometric analysis, written in the C programming language.",
+    "buildcmd":  "",
+    "scs":  "git"
+}

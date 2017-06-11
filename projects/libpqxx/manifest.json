@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "libpqxx is the official C++ client API for ?PostgreSQL, the enterprise-strength open-source relational database.",
+    "updatecmd":  "git pull",
+    "project":  "libpqxx",
+    "devhome":  "https://github.com/jtv/libpqxx",
+    "lang":  "c++",
+    "homepage":  "http://pqxx.org/development/libpqxx/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/jtv/libpqxx.git"
+}

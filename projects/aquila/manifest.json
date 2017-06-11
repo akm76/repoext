@@ -1,0 +1,10 @@
+{
+    "updatecmd":  "git pull",
+    "devhome":  "https://github.com/zsiciarz/aquila",
+    "homepage":  "http://aquila-dsp.org/",
+    "project":  "aquila",
+    "cloneurl":  "git clone https://github.com/zsiciarz/aquila.git",
+    "description":  "Aquila is an open source and cross-platform DSP (Digital Signal Processing) library written in C++.",
+    "buildcmd":  "",
+    "scs":  "git"
+}

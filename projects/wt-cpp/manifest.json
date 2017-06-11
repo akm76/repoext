@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Wt is a C++ library for developing web applications.",
+    "updatecmd":  "git pull",
+    "project":  "wt-cpp",
+    "devhome":  "https://github.com/emweb/wt",
+    "lang":  "c++",
+    "homepage":  "https://www.webtoolkit.eu/wt",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/emweb/wt.git"
+}

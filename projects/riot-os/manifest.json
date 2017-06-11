@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "RIOT powers the Internet of Things like Linux powers the Internet. RIOT is a free, open source operating system developed by a grassroots community gathering companies, academia, and hobbyists, distributed all around the world. ",
+    "updatecmd":  "git pull",
+    "project":  "riot-os",
+    "devhome":  "https://github.com/RIOT-OS/",
+    "lang":  "c",
+    "homepage":  "http://www.riot-os.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/RIOT-OS/RIOT.git"
+}

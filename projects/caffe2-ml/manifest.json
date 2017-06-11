@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Caffe2 is a lightweight, modular, and scalable deep learning framework. Building on the original Caffe, Caffe2 is designed with expression, speed, and modularity in mind.",
+    "updatecmd":  "git pull",
+    "project":  "caffe2-ml",
+    "devhome":  "https://github.com/caffe2/caffe2",
+    "lang":  "c++",
+    "homepage":  "https://caffe2.ai/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/caffe2/caffe2.git"
+}

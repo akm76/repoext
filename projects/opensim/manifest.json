@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "OpenSimulator is an open source multi-platform, multi-user 3D application server.",
+    "updatecmd":  "",
+    "project":  "opensim",
+    "devhome":  "http://opensimulator.org/wiki/Developer_Documentation",
+    "lang":  "c-sharp",
+    "homepage":  "http://opensimulator.org/wiki/Main_Page",
+    "buildcmd":  "",
+    "cloneurl":  "git clone git://opensimulator.org/git/opensim"
+}

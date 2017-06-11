@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "The ZeroMQ lightweight messaging kernel is a library which extends the standard socket interfaces with features traditionally provided by specialised messaging middleware products. ZeroMQ sockets provide an abstraction of asynchronous message queues, multiple messaging patterns, message filtering (subscriptions), seamless access to multiple transport protocols and more.",
+    "updatecmd":  "git pull",
+    "project":  "zmq",
+    "devhome":  "https://github.com/zeromq/libzmq",
+    "lang":  "c++",
+    "homepage":  "http://zeromq.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/zeromq/libzmq.git"
+}

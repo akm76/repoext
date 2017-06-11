@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "MXNet is a deep learning framework designed for both efficiency and flexibility. ",
+    "updatecmd":  "git pull",
+    "project":  "mxnet",
+    "devhome":  "https://github.com/dmlc/mxnet",
+    "lang":  "c++",
+    "homepage":  "http://mxnet.io/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/dmlc/mxnet.git"
+}

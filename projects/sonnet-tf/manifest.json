@@ -1,0 +1,14 @@
+{
+    "scs":  "git",
+    "description":  "Sonnet is a library built on top of TensorFlow for building complex neural networks.",
+    "updatecmd":  "git pull",
+    "project":  "sonnet-tf",
+    "devhome":  "https://github.com/deepmind/sonnet",
+    "lang":  [
+                 "python",
+                 "c++"
+             ],
+    "homepage":  "",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/deepmind/sonnet.git"
+}

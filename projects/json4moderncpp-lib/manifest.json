@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "updateurl":  "git pull",
+    "project":  "json4moderncpp-lib",
+    "description":  "JSON for Modern C++, a C++11 header-only JSON class. (Also has CBOR and MessagePack serializers)",
+    "devhome":  "https://github.com/nlohmann/json",
+    "lang":  "c++",
+    "homepage":  "https://nlohmann.github.io/json/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/nlohmann/json.git"
+}

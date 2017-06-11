@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "libuv is a multi-platform support library with a focus on asynchronous I/O. ",
+    "updatecmd":  "git pull",
+    "project":  "libuv",
+    "devhome":  "https://github.com/libuv/libuv",
+    "lang":  "c",
+    "homepage":  "http://libuv.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/libuv/libuv.git"
+}

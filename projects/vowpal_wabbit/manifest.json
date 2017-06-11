@@ -1,0 +1,15 @@
+{
+    "scs":  "git",
+    "description":  "Vowpal Wabbit is a machine learning system which pushes the frontier of machine learning with techniques such as online, hashing, allreduce, reductions, learning2search, active, and interactive learning.:",
+    "updatecmd":  "git pull",
+    "depends":  [
+                    "boost",
+                    "zlib"
+                ],
+    "project":  "vowpal_wabbit",
+    "devhome":  "https://github.com/JohnLangford/vowpal_wabbit",
+    "lang":  "c++",
+    "homepage":  "http://hunch.net/~vw/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/JohnLangford/vowpal_wabbit.git"
+}

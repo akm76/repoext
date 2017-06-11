@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached. Furthermore, libevent also support callbacks due to signals or regular timeouts.",
+    "updatecmd":  "git pull",
+    "project":  "libevent",
+    "devhome":  "https://github.com/libevent/libevent",
+    "lang":  "c",
+    "homepage":  "http://libevent.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/libevent/libevent.git"
+}

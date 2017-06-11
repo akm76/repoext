@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "TimeSeriesDb is a .NET library designed to store vast amount of data series in flat files.",
+    "updatecmd":  "git pull",
+    "project":  "timeseriesdb",
+    "devhome":  "https://github.com/nyurik/timeseriesdb",
+    "lang":  "c-sharp",
+    "homepage":  "",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/nyurik/timeseriesdb.git"
+}

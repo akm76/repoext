@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "TensorFlow is an open source software library for numerical computation using data flow graphs.",
+    "updatecmd":  "git pull",
+    "project":  "tensorflow-ml",
+    "devhome":  "https://github.com/tensorflow",
+    "lang":  "c++",
+    "homepage":  "https://www.tensorflow.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/tensorflow/tensorflow.git"
+}

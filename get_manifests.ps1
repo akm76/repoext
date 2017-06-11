@@ -372,9 +372,6 @@ $d=@{
 If( -Not (Test-Path .\projects\sfml)) { mkdir .\projects\sfml }
 ConvertTo-Json $d |Set-Content .\projects\sfml\manifest.json
 
-
-########
-# projects below need to have their manifests loaded
 $d=@{
     project="gretl";
     homepage="http://gretl.sourceforge.net/";
@@ -385,6 +382,8 @@ $d=@{
     lang="c";
     description="Is a cross-platform software package for econometric analysis, written in the C programming language.";
 }
+If( -Not (Test-Path .\projects\gretl)) { mkdir .\projects\gretl }
+ConvertTo-Json $d |Set-Content .\projects\gretl\manifest.json
 
 $d=@{
     project="vowpal_wabbit";
@@ -398,6 +397,8 @@ $d=@{
     description="Vowpal Wabbit is a machine learning system which pushes the frontier of machine learning with techniques such as online, hashing, allreduce, reductions, learning2search, active, and interactive learning.:"
     lang="c++";
 }
+If( -Not (Test-Path .\projects\vowpal_wabbit)) { mkdir .\projects\vowpal_wabbit }
+ConvertTo-Json $d |Set-Content .\projects\vowpal_wabbit\manifest.json
 
 $d=@{
     project="skipdb";
@@ -410,17 +411,22 @@ $d=@{
     lang="c";
     description="A Berkeley DB style database implemented with a skip list instead of a b-tree. It's small, portable and supports ACID transactions (with true durability)."
 }
+If( -Not (Test-Path .\projects\skipdb)) { mkdir .\projects\skipdb }
+ConvertTo-Json $d |Set-Content .\projects\skipdb\manifest.json
 
 $d=@{
     project="tiny-dnn";
     homepage="";
     devhome="https://github.com/tiny-dnn/tiny-dnn";
+    scs="git";
     cloneurl="git clone https://github.com/tiny-dnn/tiny-dnn.git";
     updatecmd="git pull";
     buildcmd="";
     description="header only, dependency-free deep learning framework in C++11";
     lang="c++";
 }
+If( -Not (Test-Path .\projects\tiny-dnn)) { mkdir .\projects\tiny-dnn }
+ConvertTo-Json $d |Set-Content .\projects\tiny-dnn\manifest.json
 
 $d=@{
     project="caffe-ml";
@@ -433,6 +439,8 @@ $d=@{
     description="Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by Berkeley AI Research (BAIR)/The Berkeley Vision and Learning Center (BVLC) and community contributors.";
     lang="c++","python";
 }
+If( -Not (Test-Path .\projects\caffe-ml)) { mkdir .\projects\caffe-ml }
+ConvertTo-Json $d |Set-Content .\projects\caffe-ml\manifest.json
 
 $d=@{
     project="tensorflow-ml";
@@ -445,6 +453,8 @@ $d=@{
     description="TensorFlow is an open source software library for numerical computation using data flow graphs."
     lang="c++";
 }
+If( -Not (Test-Path .\projects\tensorflow-ml)) { mkdir .\projects\tensorflow-ml }
+ConvertTo-Json $d |Set-Content .\projects\tensorflow-ml\manifest.json
 
 $d=@{
     project="torch-ml";
@@ -457,6 +467,8 @@ $d=@{
     description="Torch is a scientific computing framework with wide support for machine learning algorithms that puts GPUs first. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.";
     lang="c","lua";
 }
+If( -Not (Test-Path .\projects\torch-ml)) { mkdir .\projects\torch-ml }
+ConvertTo-Json $d |Set-Content .\projects\torch-ml\manifest.json
 
 $d=@{
     project="mc-fastflow";
@@ -473,6 +485,8 @@ high-bandwidth data flows in a network of threads running on
 a cache-coherent multi-core architectures.";
     lang="c++";
 }
+If( -Not (Test-Path .\projects\mc-fastflow)) { mkdir .\projects\mc-fastflow }
+ConvertTo-Json $d |Set-Content .\projects\mc-fastflow\manifest.json
 
 $d=@{
     project="caffe2-ml";
@@ -485,6 +499,8 @@ $d=@{
     description="Caffe2 is a lightweight, modular, and scalable deep learning framework. Building on the original Caffe, Caffe2 is designed with expression, speed, and modularity in mind.";
     lang="c++";
 }
+If( -Not (Test-Path .\projects\caffe2-ml)) { mkdir .\projects\caffe2-ml }
+ConvertTo-Json $d |Set-Content .\projects\caffe2-ml\manifest.json
 
 $d=@{
     project="opensim";
@@ -497,6 +513,8 @@ $d=@{
     buildcmd="";
     description="OpenSimulator is an open source multi-platform, multi-user 3D application server."
 }
+If( -Not (Test-Path .\projects\opensim)) { mkdir .\projects\opensim }
+ConvertTo-Json $d |Set-Content .\projects\opensim\manifest.json
 
 $d=@{
     project="fix8";
@@ -509,6 +527,8 @@ $d=@{
     description="Modern open source C++ FIX framework featuring complete schema customisation, high performance and fast development. ";
     lang="c++"
 }
+If( -Not (Test-Path .\projects\fix8)) { mkdir .\projects\fix8 }
+ConvertTo-Json $d |Set-Content .\projects\fix8\manifest.json
 
 $d=@{
     project="timeseriesdb";
@@ -521,6 +541,8 @@ $d=@{
     description="TimeSeriesDb is a .NET library designed to store vast amount of data series in flat files.";
     lang="c-sharp"
 }
+If( -Not (Test-Path .\projects\timeseriesdb)) { mkdir .\projects\timeseriesdb }
+ConvertTo-Json $d |Set-Content .\projects\timeseriesdb\manifest.json
 
 $d=@{
     project="sonnet-tf";
@@ -533,6 +555,8 @@ $d=@{
     description="Sonnet is a library built on top of TensorFlow for building complex neural networks.";
     lang="python","c++"
 }
+If( -Not (Test-Path .\projects\sonnet-tf)) { mkdir .\projects\sonnet-tf }
+ConvertTo-Json $d |Set-Content .\projects\sonnet-tf\manifest.json
 
 $d=@{
     project="json4moderncpp-lib";
@@ -545,9 +569,11 @@ $d=@{
     lang="c++";
     description="JSON for Modern C++, a C++11 header-only JSON class. (Also has CBOR and MessagePack serializers)";
 }
+If( -Not (Test-Path .\projects\json4moderncpp-lib)) { mkdir .\projects\json4moderncpp-lib }
+ConvertTo-Json $d |Set-Content .\projects\json4moderncpp-lib\manifest.json
 
 $d=@{
-    project="rios-os";
+    project="riot-os";
     homepage="http://www.riot-os.org/";
     devhome="https://github.com/RIOT-OS/";
     scs="git";
@@ -557,6 +583,8 @@ $d=@{
     description="RIOT powers the Internet of Things like Linux powers the Internet. RIOT is a free, open source operating system developed by a grassroots community gathering companies, academia, and hobbyists, distributed all around the world. ";
     lang="c"
 }
+If( -Not (Test-Path .\projects\riot-os)) { mkdir .\projects\riot-os }
+ConvertTo-Json $d |Set-Content .\projects\riot-os\manifest.json
 
 $d=@{
     project="libtrading";
@@ -569,6 +597,8 @@ $d=@{
     description="Libtrading is an open source API for high-performance, low-latency trading applications. It implements network protocols used for communicating with exchanges, dark pools, and other trading venues. The API supports FIX, FIX/FAST, and many proprietary protocols such as ITCH and OUCH used by NASDAQ.";
     lang="c"
 }
+If( -Not (Test-Path .\projects\libtrading)) { mkdir .\projects\libtrading }
+ConvertTo-Json $d |Set-Content .\projects\libtrading\manifest.json
 
 $d=@{
     project="disruptor-dotnet";
@@ -581,6 +611,8 @@ $d=@{
     description="This project aims to provide the full functionality of the Disruptor to CLR projects.";
     lang="c-sharp"
 }
+If( -Not (Test-Path .\projects\disruptor-dotnet)) { mkdir .\projects\disruptor-dotnet }
+ConvertTo-Json $d |Set-Content .\projects\disruptor-dotnet\manifest.json
 
 $d=@{
     project="hpx-cpp";
@@ -593,17 +625,199 @@ $d=@{
     lang="c++";
     description="HPX is a C++ Standard Library for Concurrency and Parallelism. It implements all of the corresponding facilities as defined by the C++ Standard. Additionally, in HPX we implement functionalities proposed as part of the ongoing C++ standardization process. We also extend the C++ Standard APIs to the distributed case."
 }
+If( -Not (Test-Path .\projects\hpx-cpp)) { mkdir .\projects\hpx-cpp }
+ConvertTo-Json $d |Set-Content .\projects\hpx-cpp\manifest.json
 
 $d=@{
     project="theano";
     homepage="http://deeplearning.net/software/theano/index.html";
     devhome="https://github.com/Theano/Theano";
+    scs="git";
     cloneurl="git clone https://github.com/Theano/Theano.git";
     updatecmd="git pull";
     buildcmd="";
     description="Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.";
     lang="python";
 }
+If( -Not (Test-Path .\projects\theano)) { mkdir .\projects\theano }
+ConvertTo-Json $d |Set-Content .\projects\theano\manifest.json
+
+$d=@{
+    project="mshadow";
+    devhome="https://github.com/dmlc/mshadow";
+    scs="git";
+    cloneurl="git clone https://github.com/dmlc/mshadow.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="MShadow is a lightweight CPU/GPU Matrix/Tensor Template Library in C++/CUDA.";
+    lang="c++"
+}
+If( -Not (Test-Path .\projects\mshadow)) { mkdir .\projects\mshadow }
+ConvertTo-Json $d |Set-Content .\projects\mshadow\manifest.json
+
+$d=@{
+    project="mxnet";
+    homepage="http://mxnet.io/";
+    devhome="https://github.com/dmlc/mxnet";
+    scs="git";
+    cloneurl="git clone https://github.com/dmlc/mxnet.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="MXNet is a deep learning framework designed for both efficiency and flexibility. ";
+    lang="c++"
+}
+If( -Not (Test-Path .\projects\mxnet)) { mkdir .\projects\mxnet }
+ConvertTo-Json $d |Set-Content .\projects\mxnet\manifest.json
+
+$d=@{
+    project="redis";
+    homepage="https://redis.io/";
+    devhome="https://github.com/antirez/redis";
+    scs="git";
+    updatecmd="git pull";
+    buildcmd="";
+    cloneurl="git clone https://github.com/antirez/redis.git";
+    description="Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.";
+}
+If( -Not (Test-Path .\projects\redis)) { mkdir .\projects\redis }
+ConvertTo-Json $d |Set-Content .\projects\redis\manifest.json
+
+$d=@{
+    project="aquila";
+    homepage="http://aquila-dsp.org/";
+    devhome="https://github.com/zsiciarz/aquila";
+    scs="git";
+    cloneurl="git clone https://github.com/zsiciarz/aquila.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Aquila is an open source and cross-platform DSP (Digital Signal Processing) library written in C++."
+}
+If( -Not (Test-Path .\projects\aquila)) { mkdir .\projects\aquila }
+ConvertTo-Json $d |Set-Content .\projects\aquila\manifest.json
+
+$d=@{
+    project="fmtlib";
+    homepage="http://fmtlib.net/latest/index.html";
+    devhome="https://github.com/fmtlib/fmt";
+    scs="git";
+    cloneurl="git clone https://github.com/fmtlib/fmt.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="fmt is an open-source formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.";
+    lang="c++";
+}
+If( -Not (Test-Path .\projects\fmtlib)) { mkdir .\projects\fmtlib }
+ConvertTo-Json $d |Set-Content .\projects\fmtlib\manifest.json
+
+$d=@{
+    project="googletest";
+    devhome="https://github.com/google/googletest";
+    scs="git";
+    cloneurl="git clone https://github.com/google/googletest.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="This repository is a merger of the formerly separate GoogleTest and GoogleMock projects. ";
+    lang="c++"
+}
+If( -Not (Test-Path .\projects\googletest)) { mkdir .\projects\googletest }
+ConvertTo-Json $d |Set-Content .\projects\googletest\manifest.json
+
+$d=@{
+    project="nanomsg";
+    devhome="https://github.com/nanomsg/nanomsg";
+    scs="git";
+    cloneurl="git clone https://github.com/nanomsg/nanomsg.git";
+    updatecmd="git pull";
+    description="The nanomsg library is a simple high-performance implementation of several scalability protocols.These scalability protocols are light-weight messaging protocols which can be used to solve a number of very common messaging patterns, such as request/reply, publish/subscribe, surveyor/respondent, and so forth. These protocols can run over a variety of transports such as TCP, UNIX sockets, and even WebSocket";
+    lang="c"
+}
+If( -Not (Test-Path .\projects\nanomsg)) { mkdir .\projects\nanomsg }
+ConvertTo-Json $d |Set-Content .\projects\nanomsg\manifest.json
+
+$d=@{
+    project="libpqxx";
+    homepage="http://pqxx.org/development/libpqxx/";
+    devhome="https://github.com/jtv/libpqxx";
+    scs="git";
+    cloneurl="git clone https://github.com/jtv/libpqxx.git";
+    updatecmd="git pull";
+    buildcmd="";
+    lang="c++";
+    description="libpqxx is the official C++ client API for ​PostgreSQL, the enterprise-strength open-source relational database."
+}
+If( -Not (Test-Path .\projects\libpqxx)) { mkdir .\projects\libpqxx }
+ConvertTo-Json $d |Set-Content .\projects\libpqxx\manifest.json
+
+$d=@{
+    project="libevent";
+    homepage="http://libevent.org/";
+    devhome="https://github.com/libevent/libevent";
+    scs="git";
+    cloneurl="git clone https://github.com/libevent/libevent.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached. Furthermore, libevent also support callbacks due to signals or regular timeouts.";
+    lang="c";
+}
+If( -Not (Test-Path .\projects\libevent)) { mkdir .\projects\libevent }
+ConvertTo-Json $d |Set-Content .\projects\libevent\manifest.json
+
+$d=@{
+    project="libuv";
+    homepage="http://libuv.org/";
+    devhome="https://github.com/libuv/libuv";
+    scs="git";
+    cloneurl="git clone https://github.com/libuv/libuv.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="libuv is a multi-platform support library with a focus on asynchronous I/O. ";
+    lang="c";
+}
+If( -Not (Test-Path .\projects\libuv)) { mkdir .\projects\libuv }
+ConvertTo-Json $d |Set-Content .\projects\libuv\manifest.json
+
+$d=@{
+    project="zmq";
+    homepage="http://zeromq.org/";
+    devhome="https://github.com/zeromq/libzmq";
+    scs="git";
+    cloneurl="git clone https://github.com/zeromq/libzmq.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="The ZeroMQ lightweight messaging kernel is a library which extends the standard socket interfaces with features traditionally provided by specialised messaging middleware products. ZeroMQ sockets provide an abstraction of asynchronous message queues, multiple messaging patterns, message filtering (subscriptions), seamless access to multiple transport protocols and more.";
+    lang="c++"
+}
+If( -Not (Test-Path .\projects\zmq)) { mkdir .\projects\zmq }
+ConvertTo-Json $d |Set-Content .\projects\zmq\manifest.json
+
+$d=@{
+    project="tapkee-lib";
+    homepage="http://tapkee.lisitsyn.me/";
+    devhome="https://github.com/lisitsyn/tapkee";
+    scs="git";
+    cloneurl="git clone https://github.com/lisitsyn/tapkee.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Tapkee is a C++ template library for dimensionality reduction with some bias on spectral methods.";
+    lang="c++"
+}
+If( -Not (Test-Path .\projects\tapkee-lib)) { mkdir .\projects\tapkee-lib }
+ConvertTo-Json $d |Set-Content .\projects\tapkee-lib\manifest.json
+
+$d=@{
+    project="wt-cpp";
+    homepage="https://www.webtoolkit.eu/wt";
+    devhome="https://github.com/emweb/wt";
+    scs="git";
+    cloneurl="git clone https://github.com/emweb/wt.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Wt is a C++ library for developing web applications.";
+    lang="c++"
+}
+If( -Not (Test-Path .\projects\wt-cpp)) { mkdir .\projects\wt-cpp }
+ConvertTo-Json $d |Set-Content .\projects\wt-cpp\manifest.json
+
 
 ########
 # Projects below need to have their manifests complete
@@ -613,72 +827,19 @@ $d=@{
     description="???"
 }
 
-$d=@{
-    project="libevent";
-    cloneurl="";
-    description="";
-}
 
 $d=@{
     project="libev";
+    homepage="http://software.schmorp.de/pkg/libev.html";
+    devhome="https://github.com/enki/libev"; # clone of a versioned package?
+    scs="git"; # the origin homepage has cvs
     cloneurl="";
 }
 
-$d=@{
-    project="libpqxx";
-    homepage="http://pqxx.org/development/libpqxx/";
-    devhome="https://github.com/jtv/libpqxx";
-    cloneurl="";
-}
 
-$d=@{
-    project="nanomsg";
-    devhome="https://github.com/nanomsg/nanomsg";
-    cloneurl="git clone https://github.com/nanomsg/nanomsg.git";
-}
 
+# maybe historic interest only
 $d=@{
-    project="mshadow";
-    devhome="https://github.com/dmlc/mshadow";
-    cloneurl="git clone https://github.com/dmlc/mshadow.git";
-    description="MShadow is a lightweight CPU/GPU Matrix/Tensor Template Library in C++/CUDA."
-}
-
-$d=@{
-    project="mxnet";
-    homepage="http://mxnet.io/";
-    devhome="https://github.com/dmlc/mxnet";
-    cloneurl="git clone https://github.com/dmlc/mxnet.git";
-    description="MXNet is a deep learning framework designed for both efficiency and flexibility. "
-}
-
-$d=@{
-    project="redis";
-    homepage="https://redis.io/";
-    devhome="https://github.com/antirez/redis";
-    cloneurl="git clone https://github.com/antirez/redis.git";
-    description="Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.";
-}
-
-$d=@{
-    project="aquila";
-    homepage="http://aquila-dsp.org/";
-    devhome="https://github.com/zsiciarz/aquila";
-    cloneurl="git clone https://github.com/zsiciarz/aquila.git";
-    description="Aquila is an open source and cross-platform DSP (Digital Signal Processing) library written in C++."
-}
-
-$d=@{
-    project="tapkee-lib";
-    homepage="http://tapkee.lisitsyn.me/";
-}
-
-$d=@{
-    project="googletest";
-}
-
-$d=@{
-    project="fmtlib";
-    devhome="https://github.com/fmtlib/fmt";
+    project="kona";
 }
 

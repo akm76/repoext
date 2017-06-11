@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Tapkee is a C++ template library for dimensionality reduction with some bias on spectral methods.",
+    "updatecmd":  "git pull",
+    "project":  "tapkee-lib",
+    "devhome":  "https://github.com/lisitsyn/tapkee",
+    "lang":  "c++",
+    "homepage":  "http://tapkee.lisitsyn.me/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/lisitsyn/tapkee.git"
+}

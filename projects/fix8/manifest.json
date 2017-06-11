@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Modern open source C++ FIX framework featuring complete schema customisation, high performance and fast development. ",
+    "updatecmd":  "git pull",
+    "project":  "fix8",
+    "devhome":  "https://github.com/fix8/fix8",
+    "lang":  "c++",
+    "homepage":  "http://www.fix8.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/fix8/fix8.git"
+}

@@ -1,0 +1,14 @@
+{
+    "scs":  "git",
+    "description":  "Torch is a scientific computing framework with wide support for machine learning algorithms that puts GPUs first. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.",
+    "updatecmd":  "git pull",
+    "project":  "torch-ml",
+    "devhome":  "https://github.com/torch/torch7",
+    "lang":  [
+                 "c",
+                 "lua"
+             ],
+    "homepage":  "http://torch.ch/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/torch/torch7.git"
+}

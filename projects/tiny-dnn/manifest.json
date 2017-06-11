@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "header only, dependency-free deep learning framework in C++11",
+    "updatecmd":  "git pull",
+    "project":  "tiny-dnn",
+    "devhome":  "https://github.com/tiny-dnn/tiny-dnn",
+    "lang":  "c++",
+    "homepage":  "",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/tiny-dnn/tiny-dnn.git"
+}

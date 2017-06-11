@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "A Berkeley DB style database implemented with a skip list instead of a b-tree. It\u0027s small, portable and supports ACID transactions (with true durability).",
+    "updatecmd":  "git pull",
+    "project":  "skipdb",
+    "devhome":  "https://github.com/stevedekorte/skipdb",
+    "lang":  "c",
+    "homepage":  "",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/stevedekorte/skipdb.git"
+}

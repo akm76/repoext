@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.",
+    "updatecmd":  "git pull",
+    "project":  "theano",
+    "devhome":  "https://github.com/Theano/Theano",
+    "lang":  "python",
+    "homepage":  "http://deeplearning.net/software/theano/index.html",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/Theano/Theano.git"
+}

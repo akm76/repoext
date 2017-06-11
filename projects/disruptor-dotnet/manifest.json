@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "This project aims to provide the full functionality of the Disruptor to CLR projects.",
+    "updatecmd":  "",
+    "project":  "disruptor-dotnet",
+    "devhome":  "https://github.com/disruptor-net/Disruptor-net",
+    "lang":  "c-sharp",
+    "homepage":  "",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/disruptor-net/Disruptor-net.git"
+}
