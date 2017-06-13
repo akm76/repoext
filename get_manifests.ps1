@@ -818,6 +818,20 @@ $d=@{
 If( -Not (Test-Path .\projects\wt-cpp)) { mkdir .\projects\wt-cpp }
 ConvertTo-Json $d |Set-Content .\projects\wt-cpp\manifest.json
 
+$d=@{
+    project="quantlib";
+    homepage="http://quantlib.org";
+    devhome="https://github.com/lballabio/quantlib";
+    scs="git";
+    cloneurl="https://github.com/lballabio/QuantLib.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="The QuantLib project (http://quantlib.org) is aimed at providing a comprehensive software framework for quantitative finance. QuantLib is a free/open-source library for modeling, trading, and risk management in real-life.";
+    lang="c++"
+}
+If( -Not (Test-Path .\projects\quantlib)) { mkdir .\projects\quantlib }
+ConvertTo-Json $d |Set-Content .\projects\quantlib\manifest.json
+
 
 ########
 # Projects below need to have their manifests complete
@@ -835,6 +849,7 @@ $d=@{
     scs="git"; # the origin homepage has cvs
     cloneurl="";
 }
+
 
 
 
