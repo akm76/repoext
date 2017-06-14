@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "RapidJSON is a JSON parser and generator for C++. It was inspired by RapidXml.",
+    "updatecmd":  "git pull",
+    "project":  "rapidjson",
+    "devhome":  "https://github.com/miloyip/rapidjson",
+    "lang":  "c++",
+    "homepage":  "http://rapidjson.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/miloyip/rapidjson.git"
+}

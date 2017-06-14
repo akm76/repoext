@@ -832,6 +832,20 @@ $d=@{
 If( -Not (Test-Path .\projects\quantlib)) { mkdir .\projects\quantlib }
 ConvertTo-Json $d |Set-Content .\projects\quantlib\manifest.json
 
+$d=@{
+    project="rapidjson";
+    homepage="http://rapidjson.org/";
+    devhome="https://github.com/miloyip/rapidjson";
+    scs="git";
+    cloneurl="git clone https://github.com/miloyip/rapidjson.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="RapidJSON is a JSON parser and generator for C++. It was inspired by RapidXml.";
+    lang="c++";
+}
+If( -Not (Test-Path .\projects\rapidjson)) { mkdir .\projects\rapidjson }
+ConvertTo-Json $d |Set-Content .\projects\rapidjson\manifest.json
+
 
 ########
 # Projects below need to have their manifests complete
@@ -850,7 +864,17 @@ $d=@{
     cloneurl="";
 }
 
-
+$d=@{
+    project="rapodjson";
+    homepage="http://rapidjson.org/";
+    devhome="https://github.com/miloyip/rapidjson";
+    scs="git";
+    cloneurl="git clone https://github.com/miloyip/rapidjson.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="RapidJSON is a JSON parser and generator for C++. It was inspired by RapidXml.";
+    lang="c++";
+}
 
 
 # maybe historic interest only
