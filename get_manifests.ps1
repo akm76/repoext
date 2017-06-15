@@ -846,6 +846,35 @@ $d=@{
 If( -Not (Test-Path .\projects\rapidjson)) { mkdir .\projects\rapidjson }
 ConvertTo-Json $d |Set-Content .\projects\rapidjson\manifest.json
 
+$d=@{
+    project="arrow-cpp";
+    homepage="http://arrow.apache.org/";
+    devhome="https://github.com/apache/arrow";
+    scs="git";
+    cloneurl="git clone https://github.com/apache/arrow.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="Arrow is a set of technologies that enable big-data systems to process and move data fast.";
+    lang="c++","java";
+}
+If( -Not (Test-Path .\projects\arrow-cpp)) { mkdir .\projects\arrow-cpp }
+ConvertTo-Json $d |Set-Content .\projects\arrow-cpp\manifest.json
+
+$d=@{
+    project="jemalloc";
+    homepage="http://jemalloc.net/";
+    devhome="https://github.com/jemalloc/jemalloc";
+    scs="git";
+    cloneurl="git clone https://github.com/jemalloc/jemalloc.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="jemalloc is a general purpose malloc(3) implementation that emphasizes
+fragmentation avoidance and scalable concurrency support.";
+    lang="c";
+}
+If( -Not (Test-Path .\projects\jemalloc)) { mkdir .\projects\jemalloc }
+ConvertTo-Json $d |Set-Content .\projects\jemalloc\manifest.json
+
 
 ########
 # Projects below need to have their manifests complete
@@ -864,17 +893,7 @@ $d=@{
     cloneurl="";
 }
 
-$d=@{
-    project="rapodjson";
-    homepage="http://rapidjson.org/";
-    devhome="https://github.com/miloyip/rapidjson";
-    scs="git";
-    cloneurl="git clone https://github.com/miloyip/rapidjson.git";
-    updatecmd="git pull";
-    buildcmd="";
-    description="RapidJSON is a JSON parser and generator for C++. It was inspired by RapidXml.";
-    lang="c++";
-}
+
 
 
 # maybe historic interest only

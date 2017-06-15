@@ -1,0 +1,14 @@
+{
+    "scs":  "git",
+    "description":  "Arrow is a set of technologies that enable big-data systems to process and move data fast.",
+    "updatecmd":  "git pull",
+    "project":  "arrow-cpp",
+    "devhome":  "https://github.com/apache/arrow",
+    "lang":  [
+                 "c++",
+                 "java"
+             ],
+    "homepage":  "http://arrow.apache.org/",
+    "buildcmd":  "",
+    "cloneurl":  "git clone https://github.com/apache/arrow.git"
+}
