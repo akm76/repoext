@@ -16,7 +16,7 @@ Function Get-DirName()
     [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
 
     $FolderBrowserDialog = New-Object System.Windows.Forms.FolderBrowserDialog
-    $FolderBrowserDialog.RootFolder = "MyDocuments"
+    $FolderBrowserDialog.RootFolder = "MyComputer" #"MyDocuments"
     $FolderBrowserDialog.Description = "Select Local Repository Destination"
     $FolderBrowserDialog.ShowDialog() | Out-Null
     $FolderBrowserDialog.SelectedPath
@@ -100,7 +100,7 @@ param(
     [parameter(Mandatory=$true)][string] $repoName,
     [parameter(Mandatory=$true)] $config
     )
-    Write-Host $repoName+" : Clone-Repo"
+    Write-Host $repoName " : Clone-Repo"
     $manifestLoc=Join-Path $config.PROJDEFS $repoName 
     $manifestLoc=Join-Path $manifestLoc "manifest.json"
     if(Test-Path $manifestLoc) {
@@ -113,9 +113,9 @@ param(
         }
         Push-Location $config.SRC
         if(($cloneURL -ne $null) -and ($cloneURL.Length -ne 0)) {
-            $cmd=$cloneURL+" "+$repoName+" >"+$repoName+"-clone.log"
-            Invoke-Expression $cmd
-        } elif($manifest.clonescript -ne $null) {
+            $cmd=$cloneURL+" "+$repoName ;
+            Invoke-Expression $cmd > $repoName"-clone.log";
+        } elseif ($manifest.clonescript -ne $null) {
             $clonescript = $manifest.clonescript
             Invoke-Expression $clonescript
         } else {
@@ -137,7 +137,34 @@ param(
     [parameter(Mandatory=$true)][string] $repoName,
     [parameter(Mandatory=$true)] $config
     )
-    Write-Host $repoName+" : Update-Repo"
+    Write-Host $repoName " : Update-Repo"
+    $manifestLoc=Join-Path $config.PROJDEFS $repoName 
+    $manifestLoc=Join-Path $manifestLoc "manifest.json"
+    if(Test-Path $manifestLoc) {
+        $manifest = Get-Content $manifestLoc | ConvertFrom-Json
+        $updatecmd = $manifest.updatecmd
+        Write-Host $updatecmd
+        $localRepo=Join-Path $config.SRC $repoName
+        if(!(Test-Path $localRepo)) {
+            throw "Local Repo doesn't exists; use Clone-Repo: "+$localRepo
+        }
+        Push-Location $localRepo
+        if(($updatecmd -ne $null) -and ($updatecmd.Length -ne 0)) {
+            foreach ($cmd in $updatecmd) {
+                Write-Host $cmd;
+                Invoke-Expression $cmd >> $repoName+"-update.log";
+            }
+        } else {
+            Write-Host $repoName + " updatecmd is empty; inspect manifest.json"
+            throw "Don't know how to update the repo"
+        }
+        Pop-Location
+    }
+    else {
+        Write-Host $repoName + " is missing manifest.json file"
+        throw "Missing manifest"
+    }
+
 }
 
 function Build-Project {

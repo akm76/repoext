@@ -116,7 +116,7 @@ $d=
     scs = "git";
     cloneurl = "git clone https://github.com/davisking/dlib.git";
     lang = "c++","python";
-    updatecmd = "";
+    updatecmd = "git pull";
     buildcmd = "";
     description = "Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems.";
 }
