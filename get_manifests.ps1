@@ -893,7 +893,13 @@ $d=@{
     cloneurl="";
 }
 
+$d=@{
+    project="jlang";
+}
 
+$d=@{
+    project="dillo";
+    }
 
 
 # maybe historic interest only
