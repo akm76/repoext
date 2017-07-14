@@ -1,0 +1,7 @@
+{
+    "homepage":  "http://jsoftware.com/",
+    "description":  "J (J language) is a high-level, general-purpose, high-performance programming language.",
+    "project":  "jlang",
+    "cloneurl":  "https://github.com/jsoftware/jsource.git",
+    "scs":  "git"
+}

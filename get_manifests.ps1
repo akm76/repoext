@@ -875,6 +875,38 @@ fragmentation avoidance and scalable concurrency support.";
 If( -Not (Test-Path .\projects\jemalloc)) { mkdir .\projects\jemalloc }
 ConvertTo-Json $d |Set-Content .\projects\jemalloc\manifest.json
 
+$d=@{
+    project="dillo";
+    homepage="https://www.dillo.org/";
+    scs="hg";
+    cloneurl="hg clone http://hg.dillo.org/dillo";
+    description="Dillo is a multi-platform graphical web browser known for its speed and small footprint.";
+    lang="c++";
+}
+If( -Not (Test-Path .\projects\dillo)) { mkdir .\projects\dillo }
+ConvertTo-Json $d |Set-Content .\projects\dillo\manifest.json
+
+$d=@{
+    project="datamash";
+    homepage="https://www.gnu.org/software/datamash/";
+    devhome="http://savannah.gnu.org/projects/datamash/";
+    scs="git";
+    cloneurl="git clone https://git.savannah.gnu.org/git/datamash.git";
+    description="GNU Datamash is a command-line program which performs basic numeric,textual and statistical operations on input textual data files. it is designed to be portable and reliable, and aid researchers to easily automate analysis pipelines, without writing c";
+}
+If( -Not (Test-Path .\projects\datamash)) { mkdir .\projects\datamash }
+ConvertTo-Json $d |Set-Content .\projects\datamash\manifest.json
+
+$d=@{
+    project="jlang";
+    homepage="http://jsoftware.com/";
+    scs="git";
+    cloneurl="https://github.com/jsoftware/jsource.git";
+    description="J (J language) is a high-level, general-purpose, high-performance programming language.";
+}
+If( -Not (Test-Path .\projects\jlang)) { mkdir .\projects\jlang }
+ConvertTo-Json $d |Set-Content .\projects\jlang\manifest.json
+
 
 ########
 # Projects below need to have their manifests complete
@@ -893,14 +925,35 @@ $d=@{
     cloneurl="";
 }
 
+
+
 $d=@{
-    project="jlang";
+    project="plotutils";
+    homepage="https://www.gnu.org/software/plotutils/";
+    # can't find the actual source repository, only snapshots...
 }
 
 $d=@{
-    project="dillo";
-    }
+    project="datamash";
+    homepage="https://www.gnu.org/software/datamash/";
+    devhome="http://savannah.gnu.org/projects/datamash/";
+    scs="git";
+    cloneurl="git clone https://git.savannah.gnu.org/git/datamash.git";
+    description="GNU Datamash is a command-line program which performs basic numeric,textual and statistical operations on input textual data files. it is designed to be portable and reliable, and aid researchers to easily automate analysis pipelines, without writing c";
+}
 
+$d=@{
+    project="fltk";
+    homepage="http://www.fltk.org/index.php";
+}
+
+$d=@{
+    project="itpp-lib";
+    homepage="http://itpp.sourceforge.net";
+    scs="git";
+    cloneurl="git clone https://git.code.sf.net/p/itpp/git";
+    description="IT++ is a C++ library of mathematical, signal processing and communication classes and functions. Its main use is in simulation of communication systems and for performing research in the area of communications.";
+}
 
 # maybe historic interest only
 $d=@{

@@ -1,0 +1,8 @@
+{
+    "lang":  "c++",
+    "description":  "Dillo is a multi-platform graphical web browser known for its speed and small footprint.",
+    "cloneurl":  "hg clone http://hg.dillo.org/dillo",
+    "homepage":  "https://www.dillo.org/",
+    "scs":  "hg",
+    "project":  "dillo"
+}

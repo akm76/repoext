@@ -1,0 +1,8 @@
+{
+    "devhome":  "http://savannah.gnu.org/projects/datamash/",
+    "description":  "GNU Datamash is a command-line program which performs basic numeric,textual and statistical operations on input textual data files. it is designed to be portable and reliable, and aid researchers to easily automate analysis pipelines, without writing c",
+    "cloneurl":  "git clone https://git.savannah.gnu.org/git/datamash.git",
+    "homepage":  "https://www.gnu.org/software/datamash/",
+    "scs":  "git",
+    "project":  "datamash"
+}
