@@ -1,0 +1,11 @@
+{
+    "scs":  "git",
+    "description":  "The Computational Geometry Algorithms Library (CGAL) is a C++ library that aims to provide easy access to efficient and reliable algorithms in computational geometry.",
+    "updatecmd":  "git pull",
+    "project":  "cgal-lib",
+    "devhome":  "https://github.com/CGAL/cgal",
+    "lang":  "c++",
+    "homepage":  "http://www.cgal.org/",
+    "buildcmd":  "",
+    "cloneurl":  "https://github.com/CGAL/cgal.git"
+}

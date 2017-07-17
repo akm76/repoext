@@ -907,6 +907,21 @@ $d=@{
 If( -Not (Test-Path .\projects\jlang)) { mkdir .\projects\jlang }
 ConvertTo-Json $d |Set-Content .\projects\jlang\manifest.json
 
+$d=@{
+    project="cgal-lib";
+    homepage="http://www.cgal.org/";
+    devhome="https://github.com/CGAL/cgal";
+    scs="git";
+    cloneurl="https://github.com/CGAL/cgal.git";
+    updatecmd="git pull";
+    buildcmd="";
+    description="The Computational Geometry Algorithms Library (CGAL) is a C++ library that aims to provide easy access to efficient and reliable algorithms in computational geometry.";
+    lang="c++"
+}
+If( -Not (Test-Path .\projects\cgal-lib)) { mkdir .\projects\cgal-lib }
+ConvertTo-Json $d |Set-Content .\projects\cgal-lib\manifest.json
+
+
 
 ########
 # Projects below need to have their manifests complete
